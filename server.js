@@ -88,23 +88,24 @@ function createTemplate (data) {
              <script>
                 var d = new Date();
                 var submitCom = document.getElementById('submitComment');
-                submitCom.onclick = function(){
+                submitCom.onclick = function() {
+                
                     var re = new XMLHttpRequest();//INItIALIZING THE REQUEST
-                re.onreadystatechange = function(){
-                  if(re.readyState === XMLHttpRequest.DONE)
-                  {
-                      if(re.status === 200)
-                      {
-                      var texts =re.responseText;
-                      texts=JSON.parse(texts);
-                      var comments='';
-                      for(var i=0;i<texts.length;i++){
-                      comments += '<li class="list-group-item">'+texts[i]+'<br><br><h6><span class="pull-right">'+d.toDateString()+'</span><br></h6><hr></li>';
-                      }
-                      var y = document.getElementById('showComment');
-                       y.innerHTML = comments;
-                      }
-                  }
+                    re.onreadystatechange = function(){
+                        if(re.readyState === XMLHttpRequest.DONE) 
+                        {
+                                if(re.status === 200)
+                                {
+                                    var texts =re.responseText;
+                                    texts=JSON.parse(texts);
+                                    var comments='';
+                                    for(var i=0;i<texts.length;i++){
+                                    comments += '<li class="list-group-item">'+texts[i]+'<br><br><h6><span class="pull-right">'+d.toDateString()+'</span><br></h6><hr></li>';
+                                    }
+                                    var y = document.getElementById('showComment');
+                                    y.innerHTML = comments;
+                                }
+                        }
                     
                 };
                 //MAKING THE REQUEST
@@ -203,17 +204,14 @@ app.get('/logout',function (req,res){
 var pool = new Pool(config);
 app.get('/get-articles', function (req, res) {
     
-    if (req.session && req.session.auth && req.session.auth.userId) {
-        pool.query('SELECT * FROM article ORDER BY date DESC', function (err, result) {
-          if (err) {
-              res.status(500).send(err.toString());
-          } else {
-              res.send(JSON.stringify(result.rows));
-          }
-       });
-    } else {
-        res.send(result.rows[0].username);
-    }
+    pool.query('SELECT * FROM article ORDER BY date DESC', function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result.rows));
+      }
+   });
+    
 });
 
 
