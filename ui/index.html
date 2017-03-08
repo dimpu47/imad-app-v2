@@ -1,17 +1,151 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+
+<head>
+    <link href="/ui/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/7f7c7f338a.js"></script>
+</head>
+
+
+<body class="body">
+    <div class="header clearfix container">
+        <heade>
+            <h3 class="text-muted">Profile + Blog</h3>
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" ><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li role="presentation"><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+                    <li role="presentation"><a href="/gauravC_resume"><i class="fa fa-user-circle" aria-hidden="true"></i> Resume</a></li>
+                    <!--<li role="presentation"><a href="#">Contact</a></li>-->
+                </ul>
+                 <div class="form-inline">
+                     <i class="fa fa-user" aria-hidden="true"> <input class="form-inline input-group form-control" type="text" id="username" placeholder="username"></i>
+                     <i class="fa fa-key" aria-hidden="true"> <input class="form-inline input-group form-control" type="password" id="password" placeholder="password"></i>
+                     <input class="form-inline btn btn-success btn-sm" type="submit" value="Login" id='submit_btn1'>
+                     <input class="form-inline btn btn btn-red btn-sm" type="submit" value="Register" id='register_btn'>
+                    
+                </div>
+            </nav>
+        </heade>
+        
+        
+
+        <h5 class="text-muted center"><marquee>This is a demo web application that was made while learning from an nptel-course: <a href="http://www.imad.tech/">Intoduction to Modern Application Development (IMAD)</a><mark> by &copy; Gaurav Choudhary</mark></marquee></h5>
+        <hr>
+
+        <div class='container container-fluid'>
+            
+            <div class="jumbotron">
+                <!--<center>-->
+                <!--        <div class="form-inline">-->
+                            
+                <!--            <input class="form-inline input-group form-control" type="text" id="username" placeholder="username"></input>-->
+                <!--            <input class="form-inline input-group form-control" type="password" id="password" placeholder="password"></input>-->
+                <!--            <input class="form-inline btn btn-success btn-sm" type="submit" value="Login" id='submit_btn1'></input>-->
+                <!--            <input class="form-inline btn btn btn-red btn-sm" type="submit" value="Register" id='register_btn'></input>-->
+                <!--        </div>-->
+                
+                <!--</center>-->
+                
+                    
+                <!--<center><h2>Profile</h2></center> -->
+                <h1 class="lead center">Profile Details</h1>
+                <div class="container container-fluid media">
+                    <center>
+                        <img class="img-rounded img-medium media-object" id="madi" src="https://lh3.googleusercontent.com/DMjVkW6P9O7SyfpAE-nzvAac6RrIrRs_2qW4uMJ0tvxPWD4I2sOJtr45FX7REBUMmW1the8u-3CB6w=w1366-h768-rw-no">
+                    </center>
+                    
+                </div>
+                <div class="container container-fluid">
+                    <dl class="dl-horizontal">
+                        
+                        <dt>Name</dt>
+                        <dd>Gaurav Choudhary</dd>
+                        <dt>Location</dt>
+                        <dd>Powai, Mumbai, Maharashtra, 400076</dd>
+                        <dt>Skill</dt>
+                        <dd>Modern Web Application Development</dd>
+                        <dt>Languages</dt>
+                        <dd>Nodejs, Expressjs, Angularjs, Python(Django, Flask, Pyramid), Golang (gorilla/mux, go-gorp), Celery, RabbitMQ, Selenium</dd>
+                        <dt>Databases</dt>
+                        <dd>MongoDB, Mongoose, MsSql, MySql, PostgreSQL, SQLite, SQL-Alchemy</dd>
+                        <dt>OS</dt>
+                        <dd><i class="fa fa-windows" aria-hidden="true"> Windows 10</i>, </dd><dd><i class="fa fa-linux" aria-hidden="true"> Linux ( Ubuntu 16.04, CentOS-7, Kali linux )</i></dd><dd> <i class="fa fa-check-square" aria-hidden="true"> Virtual-box VMs, Vagrant</i></dd>
+                        <dt>Projects</dt>
+                        <dd>
+                            <ol class="list-unstyled list-inline center">
+                                <li><a target="_blank" class="fa fa-github-alt" href="https://www.github.com/dimpu47"> my-github-page</a></li>
+                                <li><a target="_blank" class="fa fa-external-link" href="https://library-demo.herokuapp.com/"> library-demo(nodejs &amp; expressjs) </a></li>
+                                <li><a target="_blank" class="fa fa-github-alt" href="https://www.github.com/dimpu47/thermos"> thermos(python &amp; flask) </a></li>
+                                <li><a target="_blank" class="fa fa-github-alt" href="https://github.com/dimpu47/RESTfulAPI-with-nodejs"> RESTfulAPI(nodejs)</a></li>
+                                <li><a class="fa fa-github-alt" href="https://github.com/dimpu47/quick-tutorial-pyramid"> quick-tutorial(python &amp; pyramid) </a></li>
+                            </ol>
+                        </dd>
+                        <dt>contact</dt>
+                        <dd><a class="fa fa-envelope" href="mailto:dimpu47@gmail.com"> dimpu47@gmail.com</a>, <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/gaurawesome"> linkedIn-profile</a></dd>
+                    </dl>
+                </div>
+
+
+
+
+
+            </div>
         </div>
+
+
         <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+       
+        <div class="container footer">
+          
+
+            <div class='footer jumbotron'>
+                
+                
+                <div class="btn-group btn-group-justified center">
+                    <ul class="list-group list-inline">
+                
+                        <li class="list-group-item pull btn btn-primary">
+                            <center>
+                                <button id="counter" class="btn btn-info btn-sm">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true">
+                                        
+                                    </i>
+                                </button>  <span id="count" class="badge"> 0 </span> 
+                            </center>
+                            
+                        </li>
+                        <li class="list-group-item btn btn-primary">
+                            <center>
+                                <button id="counter2" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-heart" aria-hidden="true">
+                                        
+                                    </i>
+                                </button>   <span id="count2" class="badge"> 0 </span> 
+                            </center>
+                            
+                        </li>
+                
+                    </ul>
+                </div>
+                
+                
+                <hr>
+                <div class="form-inline">
+                    <input class="form-inline input-group form-control" type="text" id="name" placeholder="name">
+                    <input class="form-inline btn btn-success btn-sm" type="submit" value="Submit" id='submit_btn'>
+                </div>
+                
+                
+                <ul id="namelist">
+                </ul>
+            </div>
         </div>
+    </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
-    </body>
+</body>
+
 </html>
+
