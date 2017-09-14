@@ -1,4 +1,4 @@
-# Personal Learning Project [demo-web-app](http://dimpu47.imad.hasura-app.io/)
+# Personal Learning Project [demo-web-app]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is an exercise to practice and learn concepts of Modern Web Application Development.
 Programming languages used: Nodejs, AJAX, HTML5, CSS | Bootstrap, SQL.
